@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  signaling-server:
+    build:
+      context: .
+      dockerfile: ./apps/server/Dockerfile
+    ports:
+      - "4000:4000"
+    environment:
+      - PORT=4000
+      - NODE_ENV=production
+      - JWT_SECRET=far2near-super-secret-jwt-key-2026
+      - CORS_ORIGIN=http://localhost:3000,http://localhost:5173
+    restart: unless-stopped
+
+  web-client:
+    build:
+      context: .
+      dockerfile: ./apps/web/Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - signaling-server
+    restart: unless-stopped
