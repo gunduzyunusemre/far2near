@@ -55,7 +55,7 @@ Discord benzeri, sunucusuz (serverless felsefesi) mimariye sahip, P2P tabanlı g
 ```bash
 cd far2near
 npm.cmd run dev
-ssh -o StrictHostKeyChecking=no -R 80:127.0.0.1:4000 nokey@localhost.run
+ssh -o StrictHostKeyChecking=no -R 80:127.0.0.1:4000 nokey@localhost.run #Farklı bir terminalden bunu çalıştır
 ```
 xxxxxx.lhr.life tunneled with tls termination, https://xxxxxx.lhr.life tipindeki satırdan linki kopyalayıp başlayabilirsiniz.
 
