@@ -52,31 +52,12 @@ Discord benzeri, sunucusuz (serverless felsefesi) mimariye sahip, P2P tabanlı g
 
 ### Adımlar
 
-1. **Bağımlılıkları Yükleyin:**
 ```bash
-npm install
+cd far2near
+npm.cmd run dev
+ssh -o StrictHostKeyChecking=no -R 80:127.0.0.1:4000 nokey@localhost.run
 ```
-
-2. **Paketleri Derleyin:**
-```bash
-npm run build:packages
-```
-
-3. **Geliştirme Sunucularını Başlatın (Backend + Frontend):**
-```bash
-npm run dev
-```
-
-- **Frontend:** [http://localhost:5173](http://localhost:5173)
-- **Signaling Server:** [http://localhost:4000](http://localhost:4000)
-
----
-
-## 🐳 Docker ile Çalıştırma
-
-```bash
-docker-compose up --build
-```
+xxxxxx.lhr.life tunneled with tls termination, https://xxxxxx.lhr.life tipindeki satırdan linki kopyalayıp başlayabilirsiniz.
 
 ---
 
